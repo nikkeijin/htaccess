@@ -6,7 +6,9 @@
 
 # htaccess
 
+```
 RewriteEngine On    
+```
 Enables the RewriteEngine, which allows for URL rewriting and redirection.    
 
 > Redirect HTTP to HTTPS
