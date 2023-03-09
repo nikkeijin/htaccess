@@ -20,11 +20,9 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteEngine On
 RewriteCond %{HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-SetEnvIf Request_URI ".*" AllowCountry
-SetEnvIf Request_URI ".*" AllowRestApi
-AuthUserFile "/srv/path/.htpasswd"
-AuthName "Member Site"
-AuthType BASIC
+AuthType Basic
+AuthName "Basic Authentication."
+AuthUserFile /srv/path/.htpasswd
 require valid-user
 ```
 
