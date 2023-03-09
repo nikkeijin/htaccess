@@ -1,9 +1,7 @@
 # Output the path
 
 ```
-<?php
-	echo __FILE__ . '<br />';
-?>
+<?php echo __FILE__ . '<br />'; ?>
 ```
 
 # htaccess
