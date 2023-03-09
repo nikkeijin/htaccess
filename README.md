@@ -11,7 +11,7 @@ RewriteEngine On
 ```
 Enables the RewriteEngine, which allows for URL rewriting and redirection.    
 
-> Redirect HTTP to HTTPS
+> Redirect http to https
 
 ```
 RewriteEngine On
@@ -19,7 +19,7 @@ RewriteCond %{HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 ```
 
-> Redirect HTTP to HTTPS with password
+> Redirect http to https with password
 
 ```
 RewriteEngine On
@@ -33,7 +33,7 @@ AuthType BASIC
 require valid-user
 ```
 
-> Force https without the "www" subdomain
+> Redirect all incoming requests to the canonical https WITHOUT the "www" subdomain. 
 
 ```
 RewriteEngine On
@@ -43,7 +43,7 @@ RewriteCond %{HTTP_HOST} ^(www\.)?(.+)
 RewriteRule ^ https://%2%{REQUEST_URI} [R=301,L]
 ```
 
-> Force https with the "www" subdomain
+> redirect all incoming requests to the canonical https WITH the "www" subdomain. 
 
 ```
 RewriteEngine On
