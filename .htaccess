@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Basic Authentication."
+AuthUserFile /srv/path/.htpasswd
+require valid-user
