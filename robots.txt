@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+
+##########
+
+The user-agent string and the disallow directive are instructions that are used in a website's robots.txt file to control which pages or files search engine crawlers are allowed to access.    
+In the example you provided, the user-agent string is "*", which means that the directive applies to all web crawlers. The disallow directive "/ " specifies that all pages on the website should not be crawled by any search engine crawler.    
+This means that search engines will not be able to access any page or file on the website, which may negatively impact the website's search engine rankings and visibility. It's important to make sure that the disallow directive is used carefully and only on pages or files that should not be indexed by search engines.    
