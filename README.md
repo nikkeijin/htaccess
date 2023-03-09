@@ -43,7 +43,7 @@ RewriteCond %{HTTP_HOST} ^(www\.)?(.+)
 RewriteRule ^ https://%2%{REQUEST_URI} [R=301,L]
 ```
 
-> redirect all incoming requests to the canonical https WITH the "www" subdomain. 
+> Redirect all incoming requests to the canonical https WITH the "www" subdomain. 
 
 ```
 RewriteEngine On
