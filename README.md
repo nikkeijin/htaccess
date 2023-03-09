@@ -6,11 +6,6 @@
 
 # htaccess
 
-```
-RewriteEngine On    
-```
-Enables the RewriteEngine, which allows for URL rewriting and redirection.    
-
 > Redirect http to https
 
 ```
@@ -33,7 +28,7 @@ AuthType BASIC
 require valid-user
 ```
 
-> Redirect all incoming requests to the canonical https WITHOUT the "www" subdomain. 
+> Redirect all incoming requests to the canonical https WITHOUT the "www" subdomain
 
 ```
 RewriteEngine On
@@ -43,7 +38,7 @@ RewriteCond %{HTTP_HOST} ^(www\.)?(.+)
 RewriteRule ^ https://%2%{REQUEST_URI} [R=301,L]
 ```
 
-> Redirect all incoming requests to the canonical https WITH the "www" subdomain. 
+> Redirect all incoming requests to the canonical https WITH the "www" subdomain
 
 ```
 RewriteEngine On
