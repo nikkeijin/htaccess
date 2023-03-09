@@ -19,7 +19,7 @@ RewriteCond %{HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 ```
 
-> Redirect http to https with password
+> Redirect http to https with authentication
 
 ```
 RewriteEngine On
