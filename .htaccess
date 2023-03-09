@@ -1,7 +1,8 @@
+# Redirect http to https
 RewriteEngine On
 RewriteCond %{HTTPS} !on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
+# Enable Authentication
 AuthType Basic
 AuthName "Basic Authentication."
 AuthUserFile /srv/path/.htpasswd
